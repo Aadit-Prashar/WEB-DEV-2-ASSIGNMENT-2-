@@ -1,0 +1,118 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1bbced, #1bbced); /* darker modern blue */
+    padding: 40px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px; /* tighter layout */
+    margin: auto;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    color: #030508; /* soft white */
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* CARD LAYOUT */
+.parent-card {
+    display: flex;
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: #d3f1f6; /* soft light */
+    border-radius: 16px;
+    padding: 25px;
+    width: 100%;
+    min-height: 280px; /* equal height feel */
+    box-shadow: 0 8px 20px rgba(22, 16, 16, 0.25);
+}
+
+/* INPUT GROUP */
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* INPUT */
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #bfc8e6; /* soft border */
+    font-size: 14px;
+}
+
+/* INPUT FOCUS */
+input:focus {
+    border-color: #3b5d94; /* blue highlight */
+}
+
+/* BUTTON */
+button {
+    padding: 12px 18px;
+    background: #115bd3; /* modern blue */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: #2563eb;
+}
+
+/* WEATHER ITEM */
+.weather-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-left: 4px solid #002156;
+    margin-bottom: 20px;
+    background: #e2e8f0; /* soft gray */
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* HISTORY */
+.history {
+    margin-top: 12px;
+}
+
+/* HISTORY BUTTONS */
+.history button {
+    margin: 6px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: #000000;
+    color: #d4d5e2;
+    font-size: 12px;
+}
+
+/* HISTORY HOVER */
+.history button:hover {
+    background: #a5b4fc;
+}
+
+/* RESPONSIVE */
+@media (max-width:700px) {
+    .parent-card {
+        flex-direction: column;
+    }
+}
